@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayan Ferhat Al Jaidi</title>
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #f2f2f2;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .profile-picture {
+      width: 15%;
+      max-width: 100px; 
+      height: auto; 
+      margin-right: 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    .social-media {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .social-media a {
+      color: #007bff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .menu {
+      display: flex;
+      gap: 10px;
+    }
+    .menu a {
+      color: #333;
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .menu a:hover {
+      background-color: #ddd;
+    }
+    .project-area {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: space-around;
+    }
+    .project-box {
+      background-color: #f2f2f2;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      width: 30%; 
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+    .work-experience {
+      background-color: #f2f2f2;
+      padding: 20px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .work-experience ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .profile-picture {
+        width: 20%; 
+      }
+      h1 {
+        font-size: 1.3rem; 
+      }
+      .project-box {
+        width: 45%; 
+      }
+      .menu {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+      .profile-picture {
+        width: 30%; 
+      }
+      h1 {
+        font-size: 1.1rem; 
+      }
+      .project-box {
+        width: 80%; 
+      }
+    }
+    
+    /* Align content to the right */
+    @media only screen and (min-width: 768px) {
+      .header-content {
+        flex: 1; 
+        text-align: right; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="profile-picture" src="pfp.png" alt="Profile Picture">
+    <div class="header-content">
+      <h1>Rayan Ferhat Al Jaidi</h1>
+      <div class="social-media">
+        <a href="https://www.instagram.com/rayanjaidi_?igsh=OXl5MzFjMHR6N3A0&utm_source=qr">Instagram</a>
+        <a href="https://github.com/Rayfer12">GitHub</a>
+        <a href="https://linkedin.com/in/Rayan fer">LinkedIn</a>
+      </div>
+    </div>
+    <nav class="menu">
+      <a href="#personal-info">Personal Information</a>
+      <a href="#">Education</a>
+      <a href="#">Hobby</a>
+      <a href="#">Skill</a>
+    </nav>
+  </header>
+  <div class="project-area">
+    <div class="project-box">
+      <h2>Portfolio (2023)</h2>
+      <p>Simple portfolio for University</p>
+    </div>
+    <div class="project-box">
+      <h2>Game development (2023)</h2>
+      <p>Simple game for final Project</p>
+    </div>
+    <div class="project-box">
+      <h2>Responsive web (2024)</h2>
+      <p>Responsive website for project</p>
+    </div>
+    <div class="project-box">
+      <h2>Futsal competition (2022)</h2>
+      <p>Joined futsal competition in high school</p>
+    </div>
+    <div class="project-box">
+      <h2>Basketball competition (2023)</h2>
+      <p>Joined Binus Dash Basketball competition (2nd place)</p>
+    </div>
+    <div class="project-box">
+      <h2>Drumming competition (2022)</h2>
+      <p>Joined Yamaha drumming competition (2nd place)</p>
+    </div>
+  </div>
+  <div id="personal-info" class="work-experience">
+    <h2>Work Experience/Personal Information</h2>
+    <p>My full name is Rayan Ferhat Al Jaidi, from Jordan, no work Experience at the moment</p>
+  </div>
+</body>
+</html>
